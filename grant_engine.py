@@ -297,7 +297,7 @@ def scrape_grants_gov(keywords=None):
     for kw in keywords:
         payload = {
             "keyword": kw, "oppStatuses": "forecasted|posted",
-            "sortBy": "openDate|desc", "rows": 25, "startRecordNum": 0,
+            "sortBy": "openDate|desc", "rows": 50, "startRecordNum": 0,
         }
         try:
             time.sleep(CONFIG["request_delay_seconds"])
@@ -449,6 +449,7 @@ def scrape_rss_source(feed_url, source_name):
 ADDITIONAL_RSS_SOURCES = [
     {"url": "https://www.ed.gov/feed", "name": "ed.gov"},
     {"url": "https://www.sbir.gov/rss-feed", "name": "sbir.gov"},
+    {"url": "https://www.darpa.mil/rss", "name": "darpa.mil"},
 ]
 
 
