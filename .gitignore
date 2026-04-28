@@ -1,0 +1,22 @@
+# Database
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Logs
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo.ipynb_checkpoints/
+
+# Exports
+*.csv
+*.xlsx
+
+# macOS.DS_Store
+
+# Environment.env
+venv/
