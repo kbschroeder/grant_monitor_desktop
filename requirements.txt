@@ -1,0 +1,9 @@
+flask
+pywebview
+requests
+beautifulsoup4
+feedparser
+pandas
+lxml
+openpyxl
+python-dateutil
